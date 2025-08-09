@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.form-container {
+  margin-bottom: 30px;
+}
+
+.form-container input {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+#certificateWrapper.hidden {
+  display: none;
+}
+
+#certificate {
+  width: 800px;
+  margin: 20px auto;
+  padding: 40px;
+  background: white;
+  border: 5px solid #4a90e2;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+#certificate h1 {
+  font-size: 32px;
+  color: #4a90e2;
+  margin: 0 0 10px;
+}
+
+#certificate h2 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+#certificate p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.date-line {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.signature {
+  margin-top: 30px;
+  font-family: 'Segoe Script', cursive;
+  font-size: 20px;
+  color: #333;
+}

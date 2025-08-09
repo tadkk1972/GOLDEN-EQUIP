@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8" />
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0" />
+  <title>Digital Trust Certificate</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Generate Your Trust Certificate</h2>
+    <input type="text" id="userName" placeholder="Enter your name" />
+    <button id="generateBtn">Generate Certificate</button>
+  </div>
+
+  <div id="certificateWrapper" class="hidden">
+    <div id="certificate">
+      <h1>Digital Trust Certificate</h1>
+      <p>This certifies that</p>
+      <h2 id="recipientName">[Name]</h2>
+      <p>is a trusted and verified community member.</p>
+      <p class="date-line" id="issueDate"></p>
+      <div class="signature">⎯ Verified by Trust Authority</div>
+    </div>
+    <button id="downloadBtn">Download PDF</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
