@@ -1,0 +1,17 @@
+{
+  "name": "Golden Digital Gold",
+  "short_name": "Golden Gold",
+  "description": "A financial app for converting ETB to digital gold, transferring, and loaning, hosted at goldendigitalgold.pro.et.",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0iI0ZGRDcwMCIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSI2MCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiM0QTJCMDAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIj5HPC90ZXh0Pjwvc3ZnPg==",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "https://goldendigitalgold.pro.et/",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#FFD700",
+  "background_color": "#121212"
+}

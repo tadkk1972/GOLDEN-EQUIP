@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF‑8" />
-  <meta name="viewport" content="width=device‑width, initial‑scale=1.0" />
-  <title>Digital Trust Certificate</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golden Digital Gold</title>
+    <meta name="theme-color" content="#FFD700">
+    <link rel="canonical" href="https://goldendigitalgold.pro.et/" />
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.11.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
-<body>
-  <div class="form-container">
-    <h2>Generate Your Trust Certificate</h2>
-    <input type="text" id="userName" placeholder="Enter your name" />
-    <button id="generateBtn">Generate Certificate</button>
-  </div>
-
-  <div id="certificateWrapper" class="hidden">
-    <div id="certificate">
-      <h1>Digital Trust Certificate</h1>
-      <p>This certifies that</p>
-      <h2 id="recipientName">[Name]</h2>
-      <p>is a trusted and verified community member.</p>
-      <p class="date-line" id="issueDate"></p>
-      <div class="signature">⎯ Verified by Trust Authority</div>
-    </div>
-    <button id="downloadBtn">Download PDF</button>
-  </div>
-
-  <script src="script.js"></script>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="index.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }).catch(err => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
